@@ -7,11 +7,12 @@ import { usePathname } from "next/navigation";
 
 function Navbar() {
     const [isVisible, setIsVisible] = useState(true);
-    const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
+    const [prevScrollY, setPrevScrollY] = useState(0);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
             const handleScroll = () => {
+                setPrevScrollY(window.scrollY);
                 const currentScrollY = window.scrollY;
                 setIsVisible(prevScrollY > currentScrollY);
                 setPrevScrollY(currentScrollY);
