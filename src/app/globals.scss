@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Oswald:wght@600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #121212;
+    --primary: #0077b6;
+    --secondary: #b5179e;
+    --text: #eee;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Exo 2", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--bg-secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Oswald", sans-serif;
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+}
