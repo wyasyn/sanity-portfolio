@@ -7,22 +7,22 @@ import { usePathname } from "next/navigation";
 
 function Navbar() {
     const [isVisible, setIsVisible] = useState(true);
-    if (typeof window !== "undefined") {
-        const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
+    const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
 
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            setIsVisible(prevScrollY > currentScrollY);
-            setPrevScrollY(currentScrollY);
-        };
-
-        useEffect(() => {
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const handleScroll = () => {
+                const currentScrollY = window.scrollY;
+                setIsVisible(prevScrollY > currentScrollY);
+                setPrevScrollY(currentScrollY);
+            };
             window.addEventListener("scroll", handleScroll);
             return () => {
                 window.removeEventListener("scroll", handleScroll);
             };
-        }, [prevScrollY]);
-    }
+        }
+    }, [prevScrollY]);
+
     const pathname = usePathname();
     return (
         <nav className={isVisible ? "main-nav" : "main-nav hidden"}>
