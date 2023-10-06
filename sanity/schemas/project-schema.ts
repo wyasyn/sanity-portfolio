@@ -16,10 +16,10 @@ const project = {
         },
         {
             name: 'image',
-            title: 'Title',
+            title: 'Image',
             type: 'image',
             options: {
-                hotspot: true
+                hotspot: true,
             },
             fields: [
                 {
@@ -38,8 +38,7 @@ const project = {
         {
             name: 'content',
             title: 'Content',
-            type: 'array',
-            of: [{ type: "block" }]
+            type: 'string',
         }
     ]
 }

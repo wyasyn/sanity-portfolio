@@ -1,9 +1,9 @@
-import Projects from "@/components/Projects/Projects";
+import { Hero } from "@/components";
 
 export default async function Home() {
     return (
         <main>
-            <Projects />
+            <Hero />
         </main>
     );
 }

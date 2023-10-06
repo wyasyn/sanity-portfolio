@@ -22,6 +22,10 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-size: 1.6rem;
     background-color: var(--bg-secondary);
@@ -34,11 +38,24 @@ img {
     display: block;
 }
 
+.container {
+    margin-inline: auto;
+    width: 90%;
+    max-width: 1080px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1,
 h2,
 h3,
 h4 {
     font-family: "Oswald", sans-serif;
+    line-height: 1.1;
     color: var(--primary);
 }
 
@@ -47,4 +64,23 @@ a {
     color: inherit;
     outline: none;
     cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    border: 1px solid var(--primary);
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    transition: all 300ms ease-in-out;
+    font-size: 1.2rem;
+    &.primary {
+        background-color: var(--primary);
+    }
+    &:hover {
+        background-color: var(--secondary);
+        border-color: var(--secondary);
+    }
 }
