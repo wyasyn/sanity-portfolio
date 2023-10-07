@@ -88,3 +88,30 @@ export const bannerData = [
         icon: <BiSupport />,
     },
 ];
+
+export const servicesData = [
+    {
+        name: "web development",
+        describe:
+            " Design and code websites, ensuring functionality, usability, and a visually appealing user experience for online visitors.",
+        about: "About Development",
+    },
+    {
+        name: "data analysis",
+        describe:
+            "Interpret data to extract insights and inform decision-making, using statistical and analytical techniques.",
+        about: "About Analysis",
+    },
+    // {
+    //     name: "cyber security",
+    //     describe:
+    //         "Safeguard digital systems, networks, and data from cyber threats, ensuring their integrity, confidentiality, and availability.",
+    //     about: "About Cyber security",
+    // },
+    {
+        name: "content & seo",
+        describe:
+            "Optimize websites to improve their visibility and ranking on search engines, driving organic traffic and enhancing online presence.",
+        about: "About SEO",
+    },
+];
