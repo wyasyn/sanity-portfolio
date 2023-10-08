@@ -17,3 +17,8 @@ type ProjectCardType = {
     content: string
     link: string
 }
+
+type propTitle =  {
+    name: string
+    title: string
+}
