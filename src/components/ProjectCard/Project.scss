@@ -37,7 +37,6 @@
     .card-info {
         position: absolute;
         padding: 2em;
-        color: var(--bg-secondary);
         bottom: 0;
         transform: translateY(65%);
         transition: transform 0.3s linear;
@@ -47,9 +46,6 @@
         gap: 1rem;
         h3 {
             font-size: 2.5rem;
-        }
-        .btn {
-            color: var(--text);
         }
     }
     &:hover {
