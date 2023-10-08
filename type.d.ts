@@ -10,3 +10,10 @@ type Project = {
     alt: string
     content: string
 }
+
+type ProjectCardType = {
+    image: string
+    title: string
+    content: string
+    link: string
+}
