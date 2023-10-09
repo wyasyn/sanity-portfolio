@@ -33,6 +33,9 @@ export default function Hero() {
                         alt="profile pic"
                         width={450}
                         height={627}
+                        priority={true}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        title="Yasin Walum"
                     />
                 </div>
                 <div className="banner">

@@ -19,6 +19,7 @@ export default async function Projects() {
                             title={project.name}
                             content={project.content}
                             link={project.url}
+                            badge={project.badge}
                         />
                     ))}
                 </div>

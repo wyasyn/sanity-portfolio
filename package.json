@@ -15,6 +15,7 @@
     "next-sanity": "^5.5.4",
     "react": "latest",
     "react-dom": "latest",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "sanity": "^3.17.0"
   },

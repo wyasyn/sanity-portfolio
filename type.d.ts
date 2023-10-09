@@ -8,6 +8,7 @@ type Project = {
     image: string
     url: string
     alt: string
+    badge: string
     content: string
 }
 
@@ -16,6 +17,7 @@ type ProjectCardType = {
     title: string
     content: string
     link: string
+    badge: string
 }
 
 type propTitle =  {

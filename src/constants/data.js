@@ -62,7 +62,7 @@ export const socials = [
     {
         name: "WhatsApp",
         icon: <BiLogoWhatsapp />,
-        url: `https://api.whatsapp.com/send?phone=${myPhone}`,
+        url: `https://wa.me/${myPhone}`,
     },
     {
         name: "LinkinedIn",
@@ -102,12 +102,6 @@ export const servicesData = [
             "Interpret data to extract insights and inform decision-making, using statistical and analytical techniques.",
         about: "About Analysis",
     },
-    // {
-    //     name: "cyber security",
-    //     describe:
-    //         "Safeguard digital systems, networks, and data from cyber threats, ensuring their integrity, confidentiality, and availability.",
-    //     about: "About Cyber security",
-    // },
     {
         name: "content & seo",
         describe:

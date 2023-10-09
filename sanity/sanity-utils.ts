@@ -16,7 +16,8 @@ export async function getProjects(): Promise<Project[]> {
             "slug":slug.current,
             image, 
             url,
-            content
-        } | order(_createdAt desc)`
+            badge,
+            content,
+        }`, { cache: 'no-store' }
     )
 } 
