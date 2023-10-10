@@ -18,6 +18,6 @@ export async function getProjects(): Promise<Project[]> {
             url,
             badge,
             content,
-        }`, { next: { revalidate: 3600 } }
+        }`, { next: { revalidate:  4800 } }
     )
 } 
