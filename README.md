@@ -1,12 +1,10 @@
 # Yasin Walum Portfolio Website
 
-Welcome to the GitHub repository for my personal portfolio website, ywalum.com. This repository contains the source code and assets for my web portfolio, showcasing my work as a developer and data analyst. 
+Welcome to the GitHub repository for my personal portfolio website, ywalum.com. This repository contains the source code and assets for my web portfolio, showcasing my work as a developer and data analyst.
 
 ## About Me
 
 ![Yasin Walum Image](/public/assets/blogMe.jpg)
-
-
 I am Yasin Walum, a passionate developer and data analyst. My journey in the world of technology has allowed me to work on exciting projects and gain experience in various domains. This portfolio website serves as a showcase of my skills, projects, and achievements.
 
 ## Website Overview
@@ -20,25 +18,25 @@ My portfolio website is designed to provide visitors with insights into my backg
 - A brief introduction to who I am and what I do.
 - A call to action to explore my projects and get in touch with me.
 
-### About Me
+### About Page
 
 - Detailed information about my professional background and experience.
 - My skills and areas of expertise.
 - Personal interests and hobbies.
 
-### Projects
+### Projects Page
 
 - A showcase of my most significant and relevant projects.
 - Project descriptions, technologies used, and links to live demos or GitHub repositories.
 - A diverse range of projects, highlighting my versatility as a developer and data analyst.
 
-### Blog
+### Blog Page
 
 - A section dedicated to articles and blog posts related to technology, data analysis, and development.
 - Insights, tutorials, and reflections on various topics.
 - A way to share my knowledge and thoughts with the community.
 
-### Contact
+### Contact Page
 
 - Contact information, including email and social media profiles.
 - A contact form for visitors to send me messages directly through the website.
