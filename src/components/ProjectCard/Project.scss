@@ -49,6 +49,10 @@
             color: var(--text);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
+        p {
+            visibility: hidden;
+            transition: transform 0.3s linear;
+        }
     }
     &:hover {
         .card-info {
@@ -60,8 +64,11 @@
         &::before {
             opacity: 1;
         }
+        p {
+            visibility: visible;
+        }
     }
-    @media screen and (min-width: 689px) {
+    @media screen and (min-width: 578px) {
         &:nth-child(odd) {
             grid-row: span 3;
         }
