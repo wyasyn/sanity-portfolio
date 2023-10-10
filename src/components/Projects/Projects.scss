@@ -2,10 +2,12 @@
     padding-block: 10em;
     .projects-container {
         margin-top: 7rem;
+        width: 100%;
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-auto-rows: 100px;
+        grid-auto-flow: dense;
         justify-items: center;
     }
 }

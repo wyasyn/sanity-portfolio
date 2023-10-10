@@ -4,6 +4,7 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    grid-row: span 4;
     &::before {
         content: "";
         position: absolute;
@@ -60,10 +61,12 @@
             opacity: 1;
         }
     }
-    &:nth-child(odd) {
-        grid-row: span 3;
-    }
-    &:nth-child(even) {
-        grid-row: span 4;
+    @media screen and (min-width: 689px) {
+        &:nth-child(odd) {
+            grid-row: span 3;
+        }
+        &:nth-child(even) {
+            grid-row: span 4;
+        }
     }
 }
