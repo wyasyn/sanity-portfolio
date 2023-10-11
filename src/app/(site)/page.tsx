@@ -1,4 +1,4 @@
-import { Hero, Projects, Services } from "@/components";
+import { Hero, Projects, Services, Testimonials } from "@/components";
 
 export default async function Home() {
     return (
@@ -6,6 +6,7 @@ export default async function Home() {
             <Hero />
             <Services />
             <Projects />
+            <Testimonials />
         </main>
     );
 }

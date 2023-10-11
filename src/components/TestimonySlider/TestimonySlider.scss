@@ -1,0 +1,41 @@
+.slide {
+    position: relative;
+    width: 65%;
+    border-radius: 15px;
+    padding: 5em 2em 2em;
+    text-align: center;
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image {
+        position: absolute;
+        z-index: 12;
+        width: 100px;
+        aspect-ratio: 1;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        border-radius: 50%;
+        outline: 10px solid var(--bg-secondary);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .info {
+        h4 {
+            margin-bottom: 0.5em;
+            color: var(--text);
+            font-size: 1.4rem;
+        }
+        h3 {
+            margin-bottom: 1em;
+        }
+        .port-text {
+            max-width: 52rem;
+        }
+    }
+}

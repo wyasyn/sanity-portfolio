@@ -1,5 +1,5 @@
 import { createClient, groq } from "next-sanity";
-import { Project } from "../type";
+import { Project, TestimonyProps } from "../type";
 
 export const client = createClient({
     projectId: 'dhp2ol24',
@@ -19,5 +19,19 @@ export async function getProjects(): Promise<Project[]> {
             badge,
             content,
         }`, { next: { revalidate:  4800 } }
+    )
+} 
+
+export async function getTestimony(): Promise<TestimonyProps[]> {
+  
+    return client.fetch(
+        groq`*[_type == "testimony"]{
+            ...,
+            name,
+            "slug":slug.current,
+            image, 
+            title,
+            testimony,
+        }`, { next: { revalidate:  60 } }
     )
 } 

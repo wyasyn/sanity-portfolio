@@ -42,7 +42,8 @@
             &.active {
                 color: var(--primary);
             }
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 color: var(--secondary);
             }
         }
