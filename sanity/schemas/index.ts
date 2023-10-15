@@ -1,4 +1,4 @@
 import project from './project-schema'
-import testimony from './testimony-schema';
+import post from './post-schema';
 
-export const schemas = [project, testimony];
+export const schemas = [project, post];

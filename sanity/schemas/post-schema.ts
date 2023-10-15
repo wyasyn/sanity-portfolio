@@ -1,22 +1,22 @@
-const testimony = {
-    name: 'testimony',
-    title: 'Testimony',
+const post = {
+    name: 'post',
+    title: 'Post',
     type: 'document',
     fields: [
         {
-            name: 'name',
-            title: 'Name',
+            name: 'title',
+            title: 'Title',
             type: 'string'
         },
         {
             name: 'slug',
             title: 'Slug',
             type: 'slug',
-            options: { source: 'name' }
+            options: { source: 'title' }
         },
         {
-            name: 'title',
-            title: 'Title',
+            name: 'description',
+            title: 'Description',
             type: 'string'
         },
         {
@@ -36,12 +36,12 @@ const testimony = {
 
         },
         {
-            name: 'testimony',
-            title: 'Testimony',
+            name: 'content',
+            title: 'Content',
             type: 'array',
             of: [{ type: 'block' }]
         }
     ]
 }
 
-export default testimony;
+export default post;

@@ -1,4 +1,10 @@
-import { Hero, Projects, Services, Testimonials } from "@/components";
+import {
+    Hero,
+    PostContainer,
+    Projects,
+    Services,
+    Testimonials,
+} from "@/components";
 
 export default async function Home() {
     return (
@@ -7,6 +13,7 @@ export default async function Home() {
             <Services />
             <Projects />
             <Testimonials />
+            <PostContainer />
         </main>
     );
 }

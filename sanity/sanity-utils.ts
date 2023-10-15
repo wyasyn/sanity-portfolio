@@ -1,5 +1,5 @@
 import { createClient, groq } from "next-sanity";
-import { Project, TestimonyProps } from "../type";
+import { Project, PostProps } from "../type";
 
 export const client = createClient({
     projectId: 'dhp2ol24',
@@ -22,16 +22,33 @@ export async function getProjects(): Promise<Project[]> {
     )
 } 
 
-export async function getTestimony(): Promise<TestimonyProps[]> {
+export async function getPosts(): Promise<PostProps[]> {
   
     return client.fetch(
-        groq`*[_type == "testimony"]{
+        groq`*[_type == "post"]{
             ...,
-            name,
+            title,
             "slug":slug.current,
             image, 
-            title,
-            testimony,
+            description,
+            content,
         }`, { next: { revalidate:  60 } }
+    )
+} 
+
+
+export async function getPost(slug: string): Promise<PostProps> {
+  
+    return client.fetch(
+        groq`*[_type == "post" && slug.current == $slug ][0]{
+            ...,
+            title,
+            "slug":slug.current,
+            image, 
+            description,
+            content,
+        }`,
+        {slug}, 
+        { next: { revalidate:  60 } }
     )
 } 

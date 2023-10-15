@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { SectionTitle, TestimonySlider } from "..";
+import { SectionTitle } from "..";
 import "./Testimonials.scss";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 import { TestimonialData } from "@/constants/data";
@@ -43,6 +43,7 @@ export default function Testimonials() {
                                         alt={data.name}
                                         width={100}
                                         height={100}
+                                        priority={true}
                                     />
                                 </div>
                                 <div className="info">

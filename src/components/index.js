@@ -6,4 +6,5 @@ export { default as Services } from "./Services/Services";
 export { default as ProjectCard } from "./ProjectCard/ProjectCard";
 export { default as SectionTitle } from "./SectionTitle/SectionTitle";
 export { default as Testimonials } from "./Testimonials/Testimonials";
-export { default as TestimonySlider } from "./TestimonySlider/TestimonySlider";
+export { default as Post } from "./Post/Post";
+export { default as PostContainer } from "./PostContainer/PostContainer";

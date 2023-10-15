@@ -12,15 +12,15 @@ type Project = {
     content: string
 }
 
-type TestimonyProps = {
+type PostProps = {
     _id: string;
     _createdAt: Date
-    name: string
-    slug: string
     title: string
+    slug: string
+    description: string
     image: string
     alt: string
-    testimony: PortableTextBlock[];
+    content: PortableTextBlock[];
 }
 
 type ProjectCardType = {
