@@ -24,7 +24,6 @@ export default async function Post() {
                         <div className="center">
                             <Link
                                 href={`/posts/${data.slug}`}
-                                target="_blank"
                                 className="btn primary"
                             >
                                 View Blog

@@ -49,6 +49,6 @@ export async function getPost(slug: string): Promise<PostProps> {
             content,
         }`,
         {slug}, 
-        { next: { revalidate:  60 } }
+        { next: { revalidate:  50 } }
     )
 } 
