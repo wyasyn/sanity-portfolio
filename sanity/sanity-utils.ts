@@ -18,7 +18,7 @@ export async function getProjects(): Promise<Project[]> {
             url,
             badge,
             content,
-        }`, { next: { revalidate:  4800 } }
+        }`, { next: { revalidate:  4900 } }
     )
 } 
 
@@ -32,7 +32,7 @@ export async function getPosts(): Promise<PostProps[]> {
             image, 
             description,
             content,
-        }`, { next: { revalidate:  60 } }
+        }`, { next: { revalidate:  50 } }
     )
 } 
 
