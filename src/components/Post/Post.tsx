@@ -3,7 +3,6 @@ import { getPosts } from "../../../sanity/sanity-utils";
 import "./Post.scss";
 import { urlFor } from "../../../sanity/urlFor";
 import Link from "next/link";
-// import { PortableText } from "@portabletext/react";
 
 export default async function Post() {
     const posts = await getPosts();

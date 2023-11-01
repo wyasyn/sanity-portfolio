@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { getProjects } from "../../../sanity/sanity-utils";
 import "./Projects.scss";
-import Link from "next/link";
 import { urlFor } from "../../../sanity/urlFor";
 import { ProjectCard, SectionTitle } from "..";
 

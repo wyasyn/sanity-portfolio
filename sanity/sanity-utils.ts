@@ -5,7 +5,7 @@ export const client = createClient({
     projectId: 'dhp2ol24',
     dataset: 'production',
     apiVersion: "2023-10-04",
-    useCdn: false,
+    useCdn: true,
 });
 export async function getProjects(): Promise<Project[]> {
   
@@ -18,7 +18,7 @@ export async function getProjects(): Promise<Project[]> {
             url,
             badge,
             content,
-        }`, { next: { revalidate:  4900 } }
+        }`, { next: { revalidate:  86400 } }
     )
 } 
 
@@ -32,7 +32,7 @@ export async function getPosts(): Promise<PostProps[]> {
             image, 
             description,
             content,
-        }`, { next: { revalidate:  50 } }
+        }`, { next: { revalidate:  86400 } }
     )
 } 
 
@@ -49,6 +49,6 @@ export async function getPost(slug: string): Promise<PostProps> {
             content,
         }`,
         {slug}, 
-        { next: { revalidate:  50 } }
+        { next: { revalidate:  86400 } }
     )
 } 
